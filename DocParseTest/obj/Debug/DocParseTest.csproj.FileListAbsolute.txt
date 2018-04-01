@@ -1,0 +1,8 @@
+c:\users\jeremy.leff\documents\visual studio 2015\Projects\DocParseTest\DocParseTest\bin\Debug\DocParseTest.exe.config
+c:\users\jeremy.leff\documents\visual studio 2015\Projects\DocParseTest\DocParseTest\bin\Debug\DocParseTest.exe
+c:\users\jeremy.leff\documents\visual studio 2015\Projects\DocParseTest\DocParseTest\bin\Debug\DocParseTest.pdb
+c:\users\jeremy.leff\documents\visual studio 2015\Projects\DocParseTest\DocParseTest\bin\Debug\DocumentFormat.OpenXml.dll
+c:\users\jeremy.leff\documents\visual studio 2015\Projects\DocParseTest\DocParseTest\bin\Debug\DocumentFormat.OpenXml.xml
+c:\users\jeremy.leff\documents\visual studio 2015\Projects\DocParseTest\DocParseTest\obj\Debug\DocParseTest.csprojResolveAssemblyReference.cache
+c:\users\jeremy.leff\documents\visual studio 2015\Projects\DocParseTest\DocParseTest\obj\Debug\DocParseTest.exe
+c:\users\jeremy.leff\documents\visual studio 2015\Projects\DocParseTest\DocParseTest\obj\Debug\DocParseTest.pdb
