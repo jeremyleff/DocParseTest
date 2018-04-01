@@ -16,24 +16,21 @@ namespace DocParseTest
         {
             XElement toc = WDRetrieveTOC(@"C:\Users\jeremy.leff\Desktop\Contents.docx");
 
-            //IEnumerable<XElement> links =
-            //    from el in toc.Descendants()
-            //    where el.Name.Namespace == "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-            //    select el;
+            XNamespace w = XNamespace.Get("http://schemas.openxmlformats.org/wordprocessingml/2006/main");
+
+            IEnumerable<XElement> links =
+                from el in toc.Descendants()
+                where el.Name.Namespace == "http://schemas.openxmlformats.org/wordprocessingml/2006/main" &&
+                el.Name.LocalName == "hyperlink"
+                select el;
             Console.WriteLine("All Elements:\n");
-            foreach (XElement el in toc.Descendants())
+
+            foreach (XElement l in links)
             {
-                
-                Console.WriteLine(el.Value);
-                Console.WriteLine("\n");
-
+                Console.WriteLine(l.Name);
+                Console.WriteLine(l.Attribute(w + "anchor").Value);
             }
-                
 
-            //foreach (XElement el in links)
-            //    Console.WriteLine(el);
-
-            //Console.WriteLine(toc.Value.ToString());
         }
 
         public static XElement WDRetrieveTOC(string fileName)
